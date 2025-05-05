@@ -1,0 +1,131 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #003d6c !important;
+}
+
+.form-control {
+  background-color: #003d6c !important;
+}
+
+body h5 {
+  color: white;
+  margin-top: 5px;
+}
+
+
+.container {
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.createTaskbtn,
+.addTaskbtn {
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  right: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.backbtn {
+  width: 60px;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+#createTask,
+#createTask2,
+#addTask,
+#back {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+
+.hide {
+  display: none;
+}
+
+div h6 {
+  color: #61bcf5;
+  margin-top: 20px;
+}
+
+div input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #61bcf5;
+  color: white;
+  width: 95%;
+}
+
+input:focus {
+  /* background-color: yellow; */
+  outline: none;
+}
+
+#listContainer {
+  padding-left: 2px;
+}
+
+#listContainer li {
+  position: relative;
+  list-style: none;
+  background-color: #014e84;
+  color: white;
+  margin: 5px 0px;
+  padding: 10px 5px;
+  border: 1px solid #026DAE;
+  border-radius: 10px;
+}
+
+ul li::before {
+  content: " ";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-image: url(uncheck.png);
+  background-size: cover;
+  padding-right: 20px;
+}
+
+ul li span {
+  position: absolute;
+  right: 6px;
+  top: 2px;
+  width: 40px;
+  height: 40px;
+  font-size: 31px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+ul li span:hover {
+  background: #003D6C;
+  cursor: pointer;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+
+.checked:before {
+  background-image: url(checked.png);
+}
+
+#timeInput {
+  color: #61bcf5;
+}

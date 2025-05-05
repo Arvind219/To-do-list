@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>To Do List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary " data-bs-theme="dark" style="background-color:#026DAE !important">
+      <div class="container-fluid">
+        <a class="navbar-brand">Click the <button id="createTask"><img style="width: 40px;" src="plus.png"
+              alt=""></button> icon to add new task</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container " id="toDoList">
+      <div>
+        <ul id="listContainer">
+          <!-- <li>Click the + icon below to add new task</li> -->
+        </ul>
+      </div>
+
+      <button id="createTask2"><img class="createTaskbtn" src="plus.png" alt=""></button>
+    </div>
+
+    <div class="container hide" id="newTask">
+      <form action="" id="taskForm">
+        <h6>What is to be done?</h6>
+        <input type="text" name="task" id="taskInput" placeholder="Enter Task Here" required>
+        <h6>Due Date</h6>
+        <input type="text" id="dateInput" placeholder="Date Not Set" onfocus="(this.type='date')">
+        <input type="text" id="timeInput" placeholder="Time Not Set(all day)" onfocus="(this.type='time')">
+
+        <!-- <input type="time" placeholder="Time Not Set(all day)"> -->
+
+        <button type="submit" id="addTask"><img class="addTaskbtn" src="check-mark.png" alt=""></button>
+
+      </form>
+
+      <button id="back"><img class="backbtn" src="back.png" alt=""></button>
+    </div>
+
+  </main>
+ 
+
+
+
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
